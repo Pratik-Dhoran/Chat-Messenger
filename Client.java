@@ -5,7 +5,7 @@ class Client
 {
     public static void main(String Args[])throws Exception
     {
-       System.out.println("Client of Marvellous Chat Massenger is Running...");
+       System.out.println("Client of Pratik's Chat Massenger is Running...");
        
        Socket sobj = new Socket("localhost",2100);
        System.out.println("Client is waiting for server to accept the request..");
@@ -15,7 +15,7 @@ class Client
        BufferedReader br1 = new BufferedReader(new InputStreamReader(sobj.getInputStream()));
        BufferedReader br2 = new BufferedReader(new InputStreamReader(System.in));
 
-       System.out.println("Marvellous Chat Massenger started...");
+       System.out.println("Pratik's Chat Massenger started...");
 
        String str1,str2 ;
 
@@ -28,7 +28,7 @@ class Client
         System.out.println("Server says :" +str2);
        }
 
-       System.out.println("Thank you for using Marvellous chat messenger ...");
+       System.out.println("Thank you for using Pratik's chat messenger ...");
        sobj.close();
        ps.close();
        br1.close();
